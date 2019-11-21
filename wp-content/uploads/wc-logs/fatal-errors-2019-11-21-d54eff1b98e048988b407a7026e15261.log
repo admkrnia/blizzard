@@ -1,0 +1,9 @@
+2019-11-21T01:40:51+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on null in D:\xampp\htdocs\commerce\wp-content\themes\shopical\inc\woocommerce.php:792
+Stack trace:
+#0 D:\xampp\htdocs\commerce\wp-includes\class-wp-hook.php(286): shopical_add_to_cart_text('Add to cart', Object(WC_Product_Simple))
+#1 D:\xampp\htdocs\commerce\wp-includes\plugin.php(208): WP_Hook->apply_filters('Add to cart', Array)
+#2 D:\xampp\htdocs\commerce\wp-content\plugins\woocommerce\includes\class-wc-product-simple.php(62): apply_filters('woocommerce_pro...', 'Add to cart', Object(WC_Product_Simple))
+#3 D:\xampp\htdocs\commerce\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractProductGrid.php(473): WC_Product_Simple->add_to_cart_text()
+#4 D:\xampp\htdocs\commerce\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractProductGrid.php(446): Automattic\WooCommerce\Blocks\BlockTypes\AbstractProductGrid->get_add_to_cart(Object(WC_Product_Simple))
+#5 D:\xampp\htdocs\commerce\wp-content\plugins\wooc in D:\xampp\htdocs\commerce\wp-content\themes\shopical\inc\woocommerce.php on line 792
+

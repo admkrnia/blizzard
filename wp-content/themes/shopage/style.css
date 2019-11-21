@@ -1,0 +1,117 @@
+/*
+Theme Name: Shopage
+Theme URI: https://afthemes.com/products/shopage/
+Author: AF themes
+Author URI: https://afthemes.com
+Description:  Shopage is Shopical's child theme, a sophisticated, strong and versatile, free multi-purpose WordPress theme with deep integration with the plugin WooCommerce. The child theme has a fresh designed main banner, typography and colors. Built with enormous studies into contemporary online shopping platforms and eCommerce features in mind, it is a fully responsive WordPress WooCommerce theme with RTL and Gutenberg compatibility along with elegant design, comprehensive functionality and amazing user experience. When you start building an awesome store with the help of live customizer theme options and available widgets, it can be implemented as a fashion and clothing store, gadgets store, home appliances shop, automobile shopping site, interior store, books store, photo store, movies store, foods and restaurants online order sites and more. The theme is well optimized that helps to rank your website in the top of search engines and users will get an outstanding support from the team if there will be any difficulties while using the theme. There are three demos available for this theme so choose the one you like and start to build a website. See our demo: https://demo.afthemes.com/shopical/shopage/
+Support: https://afthemes.com/supports/
+Template: shopical
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shopage
+Tags: e-commerce, entertainment, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments, rtl-language-support
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Shopage is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Shopage is a child theme of "Shopical". Shopical Theme is licensed under the GPL v2. Copyright 2018 AF themes
+Shopage is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.main-navigation a,
+.account-user .af-my-account-menu li a,
+.font-family-1,
+.site-description,
+.trending-posts-line,
+.exclusive-posts,
+.widget-title,
+.em-widget-subtitle,
+.grid-item-metadata .item-metadata,
+.af-navcontrols .slide-count,
+.figure-categories .cat-links,
+.nav-links a {
+    font-family: 'Roboto Condensed';
+}
+
+.header-style-3-1 .navigation-section-wrapper, .header-style-3 .navigation-section-wrapper {
+    background-color: #f0f0f0;
+}
+
+.main-navigation ul.menu-desktop > li > a:visited, .main-navigation ul.menu-desktop > li > a{
+    color: #404040;
+}
+
+.af-spinners .af-spinner {
+     background-color: #ec7026;
+}
+
+
+.menu-description{
+    color: #ffffff;
+}
+
+.menu-description:after {
+    border-top: 5px solid #ec7026;
+}
+
+.main-navigation .menu-desktop > li > a:before, .main-navigation .menu > li > a:before, .menu-description{
+    background: #ec7026;
+}
+
+.sidr-class-sidr-button-close:hover, .sidr-class-sidr-button-close{
+    color: #ec7026;
+}
+
+.woocommerce button[type="submit"], .woocommerce button[type="submit"]:hover, .woocommerce button.button, .woocommerce button.button:hover {
+    background: #ec7026;
+    border-color: #ec7026;
+
+}
+
+.style-3-search button[type="submit"]{
+    background: #f5f5f5;
+    border-color: #d9d9d9;
+}
+
+body .gbl-bdge-bck-c{
+    background: #fb9909 !important;
+    color: #ffffff !important;
+}
+body .gbl-bdge-bck-c:before{
+
+    border-right: 7px solid #fb9909 !important;
+}
+
+body .secondary-color, .right-list-section h3, .horizontal ul.product-item-meta li a:hover, .aft-notification-button a, .aft-notification-button a:hover, .select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected], .product-wrapper ul.product-item-meta.verticle .yith-btn .yith-wcwl-wishlistexistsbrowse.show a:before, .woocommerce table.shop_table.cart.wishlist_table a.button:hover, .woocommerce table.shop_table.cart.wishlist_table a.button, body button, body input[type="button"], body input[type="reset"], body input[type="submit"], body .site-content .search-form .search-submit, body .site-footer .search-form .search-submit, body span.header-after:after, body #secondary .widget-title span:after, body .exclusive-posts .exclusive-now, body span.trending-no, body .wpcf7-form .wpcf7-submit, body #scroll-up, body .sale-background.no-image, body .shopical-post-format, body span.offer-time.btn-style1 a:hover, body .content-caption .aft-add-to-wishlist.btn-style1 a:hover, body ul.product-item-meta li:hover, .woocommerce #respond input#submit:hover, table.compare-list .add-to-cart td a, .woocommerce .widget_shopping_cart_content a.button.wc-forward, .woocommerce .widget_shopping_cart_content a.button.checkout, .yith-woocompare-widget a.compare:hover, .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce button.button, .woocommerce button.button.alt, .woocommerce a.button.alt, .woocommerce a.button.alt:hover, .woocommerce button.button:disabled:hover, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled]:hover, .woocommerce button.button:disabled[disabled], .woocommerce button.button, .woocommerce button.button:hover, .inner-suscribe input[type=submit]:hover, .woocommerce-page .woocommerce-message a.button, .product-wrapper ul.product-item-meta.verticle .yith-btn a:hover:before, ul.product-item-meta li a.added_to_cart:hover, .btn-style1 a, .btn-style1 a:visited, .woocommerce .btn-style1 a.button, .btn-style1 a:focus, .inner-suscribe input[type=submit], .woocommerce .yith-woocompare-widget a.compare.button:hover, .yith-woocompare-widget a.compare.button:hover, .woocommerce .yith-woocompare-widget a.compare.button, .yith-woocompare-widget a.compare.button, body.woocommerce button.button.alt.disabled:hover, body.woocommerce button.button.alt.disabled, body.woocommerce #respond input#submit.alt:hover, body.woocommerce a.button.alt:hover, body.woocommerce button.button.alt:hover, body.woocommerce input.button.alt:hover, body.woocommerce #respond input#submit.alt, body.woocommerce a.button.alt, body.woocommerce button.button:hover, body.woocommerce button.button, body.woocommerce button.button.alt, body.woocommerce input.button.alt, body.woocommerce #respond input#submit, body.woocommerce button.button, body.woocommerce input.button, body.woocommerce .widget_shopping_cart_content a.button.wc-forward, body.woocommerce .widget_shopping_cart_content a.button.checkout, body .comment-form .submit, span.icon-box-circle, .header-style-3-1 .header-right-part, .header-style-3 .header-right-part, body input.search-submit {
+    background: #ec7026;
+    border-color: #ec7026;
+}
+
+
+body.single-product .yith-wcwl-wishlistexistsbrowse a:before, body.single-product .yith-wcwl-wishlistaddedbrowse a:before, .content-caption .product-item-meta.add-to-cart-button.extended-af ul.product-item-meta-always-visible li .yith-wcwl-wishlistexistsbrowse.show a, .product-item-meta.add-to-cart-button.extended-af ul.product-item-meta-always-visible li .yith-wcwl-wishlistexistsbrowse.show a, .content-caption .product-item-meta.add-to-cart-button.extended-af ul.product-item-meta-always-visible li .yith-wcwl-wishlistaddedbrowse.show a, .product-item-meta.add-to-cart-button.extended-af ul.product-item-meta-always-visible li .yith-wcwl-wishlistaddedbrowse.show a, .content-caption .product-item-meta.add-to-cart-button.extended-af ul.product-item-meta-always-visible li a, .woocommerce ul.products li.product .price del, .product-item-meta.add-to-cart-button.extended-af ul.product-item-meta-always-visible li a, body footer.site-footer ul.product-item-meta-always-visible li a:visited, body footer.site-footer ul.product-item-meta-always-visible li a, body ul.product-item-meta-always-visible li a:visited, body ul.product-item-meta-always-visible li a, .woocommerce ul.products li.product ul.product-item-meta-always-visible li a.button, .woocommerce ul.product-item-meta-always-visible li a.button, .product-wrapper .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse.show a, .product-wrapper .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse.show a, .default-add-to-cart-button a, .add-to-cart-button a.added_to_cart:before, .woocommerce ul.products li.product .price, .woocommerce .default-add-to-cart-button a.button, .woocommerce div.product p.price, .woocommerce div.product span.price, span.price, .price del{
+    color: #ec7026;
+}
+
+
+.right-list-section .category-dropdown .product-loop-wrapper span.onsale, body .express-off-canvas-panel a.offcanvas-nav i, .posts_latest_widget .posts-date, span.offer-date-counter > span, body span.title-note span, body .badge-wrapper span.onsale, body span.product-count span.item-texts, body .post-thumbnail-wrap .posts-date, body .posts_latest_widget .posts-date{
+    background: #fb9909;
+}
+
+body span.product-count span.item-texts:after {
+    border-top: 10px solid #fb9909;
+}
+
+.right-list-section .category-dropdown .product-loop-wrapper span.onsale, body .badge-wrapper span.onsale, span.offer-date-counter > span .text, span.offer-date-counter > span .number, span.offer-date-counter > span, .badge-wrapper .onsale, .woocommerce span.onsale, span.product-count span.item-texts, span.title-note, body .post-thumbnail-wrap .posts-date, body .posts_latest_widget .posts-date{
+    color: #ffffff;
+}
+
