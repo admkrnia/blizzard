@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2019 at 04:18 AM
+-- Generation Time: Nov 27, 2019 at 03:00 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -89,7 +89,15 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 (23, 73, 'ActionScheduler', '', '', '', '2019-11-21 01:33:12', '2019-11-21 01:33:12', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
 (24, 72, 'ActionScheduler', '', '', '', '2019-11-21 02:29:19', '2019-11-21 02:29:19', 'action started', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
 (25, 72, 'ActionScheduler', '', '', '', '2019-11-21 02:29:19', '2019-11-21 02:29:19', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
-(26, 78, 'ActionScheduler', '', '', '', '2019-11-21 02:29:20', '2019-11-21 02:29:20', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0);
+(26, 78, 'ActionScheduler', '', '', '', '2019-11-21 02:29:20', '2019-11-21 02:29:20', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(27, 78, 'ActionScheduler', '', '', '', '2019-11-21 03:30:05', '2019-11-21 03:30:05', 'action started', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(28, 78, 'ActionScheduler', '', '', '', '2019-11-21 03:30:05', '2019-11-21 03:30:05', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(29, 90, 'ActionScheduler', '', '', '', '2019-11-21 03:30:05', '2019-11-21 03:30:05', 'There was a failure fetching this action', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(30, 90, 'ActionScheduler', '', '', '', '2019-11-21 03:30:06', '2019-11-21 03:30:06', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(31, 91, 'ActionScheduler', '', '', '', '2019-11-21 03:30:07', '2019-11-21 03:30:07', 'action started', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(32, 91, 'ActionScheduler', '', '', '', '2019-11-21 03:30:07', '2019-11-21 03:30:07', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(33, 91, 'ActionScheduler', '', '', '', '2019-11-21 03:30:07', '2019-11-21 03:30:07', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(34, 92, 'ActionScheduler', '', '', '', '2019-11-21 03:30:07', '2019-11-21 03:30:07', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -259,7 +267,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (99, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (100, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (101, 'sidebars_widgets', 'a:8:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:8:\"header-1\";a:0:{}s:8:\"footer-1\";a:0:{}s:8:\"footer-2\";a:0:{}s:8:\"footer-3\";a:0:{}s:8:\"footer-4\";a:0:{}s:13:\"array_version\";i:3;}', 'yes'),
-(102, 'cron', 'a:17:{i:1574306281;a:1:{s:26:\"action_scheduler_run_queue\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:12:\"every_minute\";s:4:\"args\";a:0:{}s:8:\"interval\";i:60;}}}i:1574306960;a:1:{s:32:\"woocommerce_cancel_unpaid_orders\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:0:{}}}}i:1574308971;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1574309158;a:1:{s:24:\"woocommerce_cleanup_logs\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574309442;a:1:{s:33:\"wc_admin_process_orders_milestone\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1574319958;a:1:{s:28:\"woocommerce_cleanup_sessions\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1574341371;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1574380800;a:1:{s:27:\"woocommerce_scheduled_sales\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384570;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384589;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384590;a:1:{s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384593;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384758;a:1:{s:33:\"woocommerce_cleanup_personal_data\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384768;a:1:{s:30:\"woocommerce_tracker_send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574385052;a:1:{s:14:\"wc_admin_daily\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1575331200;a:1:{s:25:\"woocommerce_geoip_updater\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:7:\"monthly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:2635200;}}}s:7:\"version\";i:2;}', 'yes'),
+(102, 'cron', 'a:17:{i:1574309281;a:1:{s:26:\"action_scheduler_run_queue\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:12:\"every_minute\";s:4:\"args\";a:0:{}s:8:\"interval\";i:60;}}}i:1574309442;a:1:{s:33:\"wc_admin_process_orders_milestone\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1574310604;a:1:{s:32:\"woocommerce_cancel_unpaid_orders\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:0:{}}}}i:1574312571;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1574319958;a:1:{s:28:\"woocommerce_cleanup_sessions\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1574341371;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1574380800;a:1:{s:27:\"woocommerce_scheduled_sales\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384570;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384589;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384590;a:1:{s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384593;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384758;a:1:{s:33:\"woocommerce_cleanup_personal_data\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574384768;a:1:{s:30:\"woocommerce_tracker_send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574385052;a:1:{s:14:\"wc_admin_daily\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574395558;a:1:{s:24:\"woocommerce_cleanup_logs\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1575331200;a:1:{s:25:\"woocommerce_geoip_updater\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:7:\"monthly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:2635200;}}}s:7:\"version\";i:2;}', 'yes'),
 (103, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (104, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (105, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -421,7 +429,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (319, 'mailchimp_woocommerce_db_mailchimp_carts', '1', 'no'),
 (320, 'mailchimp-woocommerce_cart_table_add_index_update', '1', 'yes'),
 (326, 'woocommerce_setup_jetpack_opted_in', '1', 'yes'),
-(330, '_transient_product_query-transient-version', '1574305655', 'yes'),
+(330, '_transient_product_query-transient-version', '1574309244', 'yes'),
 (331, 'wc_admin_install_timestamp', '1573693854', 'yes'),
 (332, 'wc_admin_last_orders_milestone', '0', 'yes'),
 (345, 'wc_admin_version', '0.22.0', 'yes');
@@ -429,7 +437,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (351, 'woocommerce_marketplace_suggestions', 'a:2:{s:11:\"suggestions\";a:26:{i:0;a:4:{s:4:\"slug\";s:28:\"product-edit-meta-tab-header\";s:7:\"context\";s:28:\"product-edit-meta-tab-header\";s:5:\"title\";s:22:\"Recommended extensions\";s:13:\"allow-dismiss\";b:0;}i:1;a:6:{s:4:\"slug\";s:39:\"product-edit-meta-tab-footer-browse-all\";s:7:\"context\";s:28:\"product-edit-meta-tab-footer\";s:9:\"link-text\";s:21:\"Browse all extensions\";s:3:\"url\";s:64:\"https://woocommerce.com/product-category/woocommerce-extensions/\";s:8:\"promoted\";s:31:\"category-woocommerce-extensions\";s:13:\"allow-dismiss\";b:0;}i:2;a:9:{s:4:\"slug\";s:46:\"product-edit-mailchimp-woocommerce-memberships\";s:7:\"product\";s:33:\"woocommerce-memberships-mailchimp\";s:14:\"show-if-active\";a:1:{i:0;s:23:\"woocommerce-memberships\";}s:7:\"context\";a:1:{i:0;s:26:\"product-edit-meta-tab-body\";}s:4:\"icon\";s:117:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/mailchimp-for-memberships.svg\";s:5:\"title\";s:25:\"Mailchimp for Memberships\";s:4:\"copy\";s:79:\"Completely automate your email lists by syncing membership changes to Mailchimp\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:67:\"https://woocommerce.com/products/mailchimp-woocommerce-memberships/\";}i:3;a:9:{s:4:\"slug\";s:19:\"product-edit-addons\";s:7:\"product\";s:26:\"woocommerce-product-addons\";s:14:\"show-if-active\";a:2:{i:0;s:25:\"woocommerce-subscriptions\";i:1;s:20:\"woocommerce-bookings\";}s:7:\"context\";a:1:{i:0;s:26:\"product-edit-meta-tab-body\";}s:4:\"icon\";s:107:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/product-add-ons.svg\";s:5:\"title\";s:15:\"Product Add-Ons\";s:4:\"copy\";s:93:\"Offer add-ons like gift wrapping, special messages or other special options for your products\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:49:\"https://woocommerce.com/products/product-add-ons/\";}i:4;a:9:{s:4:\"slug\";s:46:\"product-edit-woocommerce-subscriptions-gifting\";s:7:\"product\";s:33:\"woocommerce-subscriptions-gifting\";s:14:\"show-if-active\";a:1:{i:0;s:25:\"woocommerce-subscriptions\";}s:7:\"context\";a:1:{i:0;s:26:\"product-edit-meta-tab-body\";}s:4:\"icon\";s:117:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/gifting-for-subscriptions.svg\";s:5:\"title\";s:25:\"Gifting for Subscriptions\";s:4:\"copy\";s:70:\"Let customers buy subscriptions for others - they\'re the ultimate gift\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:67:\"https://woocommerce.com/products/woocommerce-subscriptions-gifting/\";}i:5;a:9:{s:4:\"slug\";s:42:\"product-edit-teams-woocommerce-memberships\";s:7:\"product\";s:33:\"woocommerce-memberships-for-teams\";s:14:\"show-if-active\";a:1:{i:0;s:23:\"woocommerce-memberships\";}s:7:\"context\";a:1:{i:0;s:26:\"product-edit-meta-tab-body\";}s:4:\"icon\";s:113:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/teams-for-memberships.svg\";s:5:\"title\";s:21:\"Teams for Memberships\";s:4:\"copy\";s:123:\"Adds B2B functionality to WooCommerce Memberships, allowing sites to sell team, group, corporate, or family member accounts\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:63:\"https://woocommerce.com/products/teams-woocommerce-memberships/\";}i:6;a:8:{s:4:\"slug\";s:29:\"product-edit-variation-images\";s:7:\"product\";s:39:\"woocommerce-additional-variation-images\";s:7:\"context\";a:1:{i:0;s:26:\"product-edit-meta-tab-body\";}s:4:\"icon\";s:119:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/additional-variation-images.svg\";s:5:\"title\";s:27:\"Additional Variation Images\";s:4:\"copy\";s:72:\"Showcase your products in the best light with a image for each variation\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:73:\"https://woocommerce.com/products/woocommerce-additional-variation-images/\";}i:7;a:9:{s:4:\"slug\";s:47:\"product-edit-woocommerce-subscription-downloads\";s:7:\"product\";s:34:\"woocommerce-subscription-downloads\";s:14:\"show-if-active\";a:1:{i:0;s:25:\"woocommerce-subscriptions\";}s:7:\"context\";a:1:{i:0;s:26:\"product-edit-meta-tab-body\";}s:4:\"icon\";s:114:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/subscription-downloads.svg\";s:5:\"title\";s:22:\"Subscription Downloads\";s:4:\"copy\";s:57:\"Give customers special downloads with their subscriptions\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:68:\"https://woocommerce.com/products/woocommerce-subscription-downloads/\";}i:8;a:8:{s:4:\"slug\";s:31:\"product-edit-min-max-quantities\";s:7:\"product\";s:30:\"woocommerce-min-max-quantities\";s:7:\"context\";a:1:{i:0;s:26:\"product-edit-meta-tab-body\";}s:4:\"icon\";s:110:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/min-max-quantities.svg\";s:5:\"title\";s:18:\"Min/Max Quantities\";s:4:\"copy\";s:81:\"Specify minimum and maximum allowed product quantities for orders to be completed\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:52:\"https://woocommerce.com/products/min-max-quantities/\";}i:9;a:8:{s:4:\"slug\";s:28:\"product-edit-name-your-price\";s:7:\"product\";s:27:\"woocommerce-name-your-price\";s:7:\"context\";a:1:{i:0;s:26:\"product-edit-meta-tab-body\";}s:4:\"icon\";s:107:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/name-your-price.svg\";s:5:\"title\";s:15:\"Name Your Price\";s:4:\"copy\";s:70:\"Let customers pay what they want - useful for donations, tips and more\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:49:\"https://woocommerce.com/products/name-your-price/\";}i:10;a:8:{s:4:\"slug\";s:42:\"product-edit-woocommerce-one-page-checkout\";s:7:\"product\";s:29:\"woocommerce-one-page-checkout\";s:7:\"context\";a:1:{i:0;s:26:\"product-edit-meta-tab-body\";}s:4:\"icon\";s:109:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/one-page-checkout.svg\";s:5:\"title\";s:17:\"One Page Checkout\";s:4:\"copy\";s:92:\"Don\'t make customers click around - let them choose products, checkout & pay all on one page\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:63:\"https://woocommerce.com/products/woocommerce-one-page-checkout/\";}i:11;a:4:{s:4:\"slug\";s:19:\"orders-empty-header\";s:7:\"context\";s:24:\"orders-list-empty-header\";s:5:\"title\";s:20:\"Tools for your store\";s:13:\"allow-dismiss\";b:0;}i:12;a:6:{s:4:\"slug\";s:30:\"orders-empty-footer-browse-all\";s:7:\"context\";s:24:\"orders-list-empty-footer\";s:9:\"link-text\";s:21:\"Browse all extensions\";s:3:\"url\";s:64:\"https://woocommerce.com/product-category/woocommerce-extensions/\";s:8:\"promoted\";s:31:\"category-woocommerce-extensions\";s:13:\"allow-dismiss\";b:0;}i:13;a:8:{s:4:\"slug\";s:19:\"orders-empty-zapier\";s:7:\"context\";s:22:\"orders-list-empty-body\";s:7:\"product\";s:18:\"woocommerce-zapier\";s:4:\"icon\";s:98:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/zapier.svg\";s:5:\"title\";s:6:\"Zapier\";s:4:\"copy\";s:88:\"Save time and increase productivity by connecting your store to more than 1000+ services\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:52:\"https://woocommerce.com/products/woocommerce-zapier/\";}i:14;a:8:{s:4:\"slug\";s:30:\"orders-empty-shipment-tracking\";s:7:\"context\";s:22:\"orders-list-empty-body\";s:7:\"product\";s:29:\"woocommerce-shipment-tracking\";s:4:\"icon\";s:109:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/shipment-tracking.svg\";s:5:\"title\";s:17:\"Shipment Tracking\";s:4:\"copy\";s:86:\"Let customers know when their orders will arrive by adding shipment tracking to emails\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:51:\"https://woocommerce.com/products/shipment-tracking/\";}i:15;a:8:{s:4:\"slug\";s:32:\"orders-empty-table-rate-shipping\";s:7:\"context\";s:22:\"orders-list-empty-body\";s:7:\"product\";s:31:\"woocommerce-table-rate-shipping\";s:4:\"icon\";s:111:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/table-rate-shipping.svg\";s:5:\"title\";s:19:\"Table Rate Shipping\";s:4:\"copy\";s:122:\"Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:53:\"https://woocommerce.com/products/table-rate-shipping/\";}i:16;a:8:{s:4:\"slug\";s:40:\"orders-empty-shipping-carrier-extensions\";s:7:\"context\";s:22:\"orders-list-empty-body\";s:4:\"icon\";s:119:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/shipping-carrier-extensions.svg\";s:5:\"title\";s:27:\"Shipping Carrier Extensions\";s:4:\"copy\";s:116:\"Show live rates from FedEx, UPS, USPS and more directly on your store - never under or overcharge for shipping again\";s:11:\"button-text\";s:13:\"Find Carriers\";s:8:\"promoted\";s:26:\"category-shipping-carriers\";s:3:\"url\";s:99:\"https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/shipping-carriers/\";}i:17;a:8:{s:4:\"slug\";s:32:\"orders-empty-google-product-feed\";s:7:\"context\";s:22:\"orders-list-empty-body\";s:7:\"product\";s:25:\"woocommerce-product-feeds\";s:4:\"icon\";s:111:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/google-product-feed.svg\";s:5:\"title\";s:19:\"Google Product Feed\";s:4:\"copy\";s:76:\"Increase sales by letting customers find you when they\'re shopping on Google\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:53:\"https://woocommerce.com/products/google-product-feed/\";}i:18;a:4:{s:4:\"slug\";s:35:\"products-empty-header-product-types\";s:7:\"context\";s:26:\"products-list-empty-header\";s:5:\"title\";s:23:\"Other types of products\";s:13:\"allow-dismiss\";b:0;}i:19;a:6:{s:4:\"slug\";s:32:\"products-empty-footer-browse-all\";s:7:\"context\";s:26:\"products-list-empty-footer\";s:9:\"link-text\";s:21:\"Browse all extensions\";s:3:\"url\";s:64:\"https://woocommerce.com/product-category/woocommerce-extensions/\";s:8:\"promoted\";s:31:\"category-woocommerce-extensions\";s:13:\"allow-dismiss\";b:0;}i:20;a:8:{s:4:\"slug\";s:30:\"products-empty-product-vendors\";s:7:\"context\";s:24:\"products-list-empty-body\";s:7:\"product\";s:27:\"woocommerce-product-vendors\";s:4:\"icon\";s:107:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/product-vendors.svg\";s:5:\"title\";s:15:\"Product Vendors\";s:4:\"copy\";s:47:\"Turn your store into a multi-vendor marketplace\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:49:\"https://woocommerce.com/products/product-vendors/\";}i:21;a:8:{s:4:\"slug\";s:26:\"products-empty-memberships\";s:7:\"context\";s:24:\"products-list-empty-body\";s:7:\"product\";s:23:\"woocommerce-memberships\";s:4:\"icon\";s:103:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/memberships.svg\";s:5:\"title\";s:11:\"Memberships\";s:4:\"copy\";s:76:\"Give members access to restricted content or products, for a fee or for free\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:57:\"https://woocommerce.com/products/woocommerce-memberships/\";}i:22;a:9:{s:4:\"slug\";s:35:\"products-empty-woocommerce-deposits\";s:7:\"context\";s:24:\"products-list-empty-body\";s:7:\"product\";s:20:\"woocommerce-deposits\";s:14:\"show-if-active\";a:1:{i:0;s:20:\"woocommerce-bookings\";}s:4:\"icon\";s:100:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/deposits.svg\";s:5:\"title\";s:8:\"Deposits\";s:4:\"copy\";s:75:\"Make it easier for customers to pay by offering a deposit or a payment plan\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:54:\"https://woocommerce.com/products/woocommerce-deposits/\";}i:23;a:8:{s:4:\"slug\";s:40:\"products-empty-woocommerce-subscriptions\";s:7:\"context\";s:24:\"products-list-empty-body\";s:7:\"product\";s:25:\"woocommerce-subscriptions\";s:4:\"icon\";s:105:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/subscriptions.svg\";s:5:\"title\";s:13:\"Subscriptions\";s:4:\"copy\";s:97:\"Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:59:\"https://woocommerce.com/products/woocommerce-subscriptions/\";}i:24;a:8:{s:4:\"slug\";s:35:\"products-empty-woocommerce-bookings\";s:7:\"context\";s:24:\"products-list-empty-body\";s:7:\"product\";s:20:\"woocommerce-bookings\";s:4:\"icon\";s:100:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/bookings.svg\";s:5:\"title\";s:8:\"Bookings\";s:4:\"copy\";s:99:\"Allow customers to book appointments, make reservations or rent equipment without leaving your site\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:54:\"https://woocommerce.com/products/woocommerce-bookings/\";}i:25;a:8:{s:4:\"slug\";s:30:\"products-empty-product-bundles\";s:7:\"context\";s:24:\"products-list-empty-body\";s:7:\"product\";s:27:\"woocommerce-product-bundles\";s:4:\"icon\";s:107:\"https://woocommerce.com/wp-content/plugins/wccom-plugins//marketplace-suggestions/icons/product-bundles.svg\";s:5:\"title\";s:15:\"Product Bundles\";s:4:\"copy\";s:49:\"Offer customizable bundles and assembled products\";s:11:\"button-text\";s:10:\"Learn More\";s:3:\"url\";s:49:\"https://woocommerce.com/products/product-bundles/\";}}s:7:\"updated\";i:1574299991;}', 'no'),
 (363, 'storefront_nux_guided_tour', '1', 'yes'),
 (367, '_transient_woocommerce_reports-transient-version', '1573694043', 'yes'),
-(398, '_transient_product-transient-version', '1574305655', 'yes'),
+(398, '_transient_product-transient-version', '1574309244', 'yes'),
 (449, 'storefront_nux_dismissed', '1', 'yes'),
 (451, '_transient_timeout_wc_block_d7e9c0cb6b4995c59f0581d00c0ee91a', '1576897833', 'no'),
 (452, '_transient_wc_block_d7e9c0cb6b4995c59f0581d00c0ee91a', 'a:2:{s:7:\"version\";s:10:\"1574305655\";s:5:\"value\";a:4:{i:0;i:84;i:1;i:77;i:2;i:65;i:3;i:62;}}', 'no'),
@@ -457,7 +465,6 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (612, '_transient_timeout__woocommerce_helper_updates', '1574342682', 'no'),
 (613, '_transient__woocommerce_helper_updates', 'a:4:{s:4:\"hash\";s:32:\"358c40eaa335ac0d027f3e9faa3c726e\";s:7:\"updated\";i:1574299482;s:8:\"products\";a:0:{}s:6:\"errors\";a:1:{i:0;s:10:\"http-error\";}}', 'no'),
 (614, '_site_transient_update_plugins', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1574300445;s:8:\"response\";a:1:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.3\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:3:\"5.3\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:5:{s:53:\"facebook-for-woocommerce/facebook-for-woocommerce.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:38:\"w.org/plugins/facebook-for-woocommerce\";s:4:\"slug\";s:24:\"facebook-for-woocommerce\";s:6:\"plugin\";s:53:\"facebook-for-woocommerce/facebook-for-woocommerce.php\";s:11:\"new_version\";s:6:\"1.9.15\";s:3:\"url\";s:55:\"https://wordpress.org/plugins/facebook-for-woocommerce/\";s:7:\"package\";s:74:\"https://downloads.wordpress.org/plugin/facebook-for-woocommerce.1.9.15.zip\";s:5:\"icons\";a:3:{s:2:\"2x\";s:77:\"https://ps.w.org/facebook-for-woocommerce/assets/icon-256x256.png?rev=2040223\";s:2:\"1x\";s:69:\"https://ps.w.org/facebook-for-woocommerce/assets/icon.svg?rev=2040223\";s:3:\"svg\";s:69:\"https://ps.w.org/facebook-for-woocommerce/assets/icon.svg?rev=2040223\";}s:7:\"banners\";a:0:{}s:11:\"banners_rtl\";a:0:{}}s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}}s:51:\"mailchimp-for-woocommerce/mailchimp-woocommerce.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:39:\"w.org/plugins/mailchimp-for-woocommerce\";s:4:\"slug\";s:25:\"mailchimp-for-woocommerce\";s:6:\"plugin\";s:51:\"mailchimp-for-woocommerce/mailchimp-woocommerce.php\";s:11:\"new_version\";s:3:\"2.3\";s:3:\"url\";s:56:\"https://wordpress.org/plugins/mailchimp-for-woocommerce/\";s:7:\"package\";s:72:\"https://downloads.wordpress.org/plugin/mailchimp-for-woocommerce.2.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:78:\"https://ps.w.org/mailchimp-for-woocommerce/assets/icon-256x256.png?rev=1509501\";s:2:\"1x\";s:78:\"https://ps.w.org/mailchimp-for-woocommerce/assets/icon-256x256.png?rev=1509501\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:81:\"https://ps.w.org/mailchimp-for-woocommerce/assets/banner-1544x500.png?rev=1950415\";s:2:\"1x\";s:80:\"https://ps.w.org/mailchimp-for-woocommerce/assets/banner-772x250.jpg?rev=1950415\";}s:11:\"banners_rtl\";a:0:{}}s:27:\"woocommerce/woocommerce.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/woocommerce\";s:4:\"slug\";s:11:\"woocommerce\";s:6:\"plugin\";s:27:\"woocommerce/woocommerce.php\";s:11:\"new_version\";s:5:\"3.8.0\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/woocommerce/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/woocommerce.3.8.0.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=2075035\";s:2:\"1x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-128x128.png?rev=2075035\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/woocommerce/assets/banner-1544x500.png?rev=2075035\";s:2:\"1x\";s:66:\"https://ps.w.org/woocommerce/assets/banner-772x250.png?rev=2075035\";}s:11:\"banners_rtl\";a:0:{}}s:39:\"woocommerce-admin/woocommerce-admin.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:31:\"w.org/plugins/woocommerce-admin\";s:4:\"slug\";s:17:\"woocommerce-admin\";s:6:\"plugin\";s:39:\"woocommerce-admin/woocommerce-admin.php\";s:11:\"new_version\";s:6:\"0.22.0\";s:3:\"url\";s:48:\"https://wordpress.org/plugins/woocommerce-admin/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/woocommerce-admin.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/woocommerce-admin/assets/icon-256x256.jpg?rev=2057866\";s:2:\"1x\";s:70:\"https://ps.w.org/woocommerce-admin/assets/icon-128x128.jpg?rev=2057866\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:73:\"https://ps.w.org/woocommerce-admin/assets/banner-1544x500.jpg?rev=2057866\";s:2:\"1x\";s:72:\"https://ps.w.org/woocommerce-admin/assets/banner-772x250.jpg?rev=2057866\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
-(636, 'product_cat_children', 'a:3:{i:15;a:3:{i:0;i:19;i:1;i:20;i:2;i:21;}i:18;a:4:{i:0;i:22;i:1;i:23;i:2;i:24;i:3;i:25;}i:26;a:1:{i:0;i:27;}}', 'yes'),
 (642, '_transient_timeout_wc_related_77', '1574391796', 'no'),
 (643, '_transient_wc_related_77', 'a:2:{s:50:\"limit=3&exclude_ids%5B0%5D=0&exclude_ids%5B1%5D=77\";a:0:{}s:50:\"limit=5&exclude_ids%5B0%5D=0&exclude_ids%5B1%5D=77\";a:1:{i:0;s:2:\"84\";}}', 'no'),
 (652, 'widget_shopical_categorised_product_list', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -471,10 +478,6 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (660, 'widget_shopical_store_offers', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (661, 'widget_shopical_social_contacts', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (662, 'theme_mods_shopage', 'a:3:{s:18:\"custom_css_post_id\";i:-1;s:12:\"header_image\";s:71:\"http://localhost/commerce/wp-content/uploads/2019/11/cropped-124364.jpg\";s:17:\"header_image_data\";O:8:\"stdClass\":5:{s:13:\"attachment_id\";i:82;s:3:\"url\";s:71:\"http://localhost/commerce/wp-content/uploads/2019/11/cropped-124364.jpg\";s:13:\"thumbnail_url\";s:71:\"http://localhost/commerce/wp-content/uploads/2019/11/cropped-124364.jpg\";s:6:\"height\";i:175;s:5:\"width\";i:1500;}}', 'yes'),
-(682, '_transient_timeout_wc_admin_unsnooze_admin_notes_checked', '1574306958', 'no'),
-(683, '_transient_wc_admin_unsnooze_admin_notes_checked', 'yes', 'no'),
-(684, '_transient_wc_count_comments', 'O:8:\"stdClass\":7:{s:14:\"total_comments\";i:1;s:3:\"all\";i:1;s:8:\"approved\";s:1:\"1\";s:9:\"moderated\";i:0;s:4:\"spam\";i:0;s:5:\"trash\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
-(685, '_transient_as_comment_count', 'O:8:\"stdClass\":7:{s:8:\"approved\";s:1:\"1\";s:14:\"total_comments\";i:1;s:3:\"all\";i:1;s:9:\"moderated\";i:0;s:4:\"spam\";i:0;s:5:\"trash\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
 (686, 'theme_switch_menu_locations', 'a:0:{}', 'yes'),
 (687, 'theme_switched_via_customizer', '', 'yes'),
 (688, 'customize_stashed_theme_mods', 'a:0:{}', 'no'),
@@ -483,8 +486,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (759, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1574305227;s:7:\"checked\";a:6:{s:7:\"shopage\";s:5:\"1.0.0\";s:8:\"shopical\";s:5:\"1.0.7\";s:10:\"storefront\";s:5:\"2.5.3\";s:14:\"twentynineteen\";s:3:\"1.4\";s:15:\"twentyseventeen\";s:3:\"2.2\";s:13:\"twentysixteen\";s:3:\"2.0\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
 (765, '_transient_timeout_wc_related_84', '1574391800', 'no'),
 (766, '_transient_wc_related_84', 'a:1:{s:50:\"limit=5&exclude_ids%5B0%5D=0&exclude_ids%5B1%5D=84\";a:1:{i:0;s:2:\"77\";}}', 'no'),
-(773, '_transient_timeout_wc_term_counts', '1576897833', 'no'),
-(774, '_transient_wc_term_counts', 'a:8:{i:15;s:1:\"5\";i:21;s:1:\"1\";i:26;s:1:\"2\";i:18;s:1:\"2\";i:19;s:1:\"2\";i:22;s:1:\"2\";i:27;s:1:\"2\";i:20;s:1:\"2\";}', 'no');
+(798, 'product_cat_children', 'a:3:{i:15;a:3:{i:0;i:19;i:1;i:20;i:2;i:21;}i:18;a:4:{i:0;i:22;i:1;i:23;i:2;i:24;i:3;i:25;}i:26;a:8:{i:0;i:27;i:1;i:29;i:2;i:30;i:3;i:31;i:4;i:32;i:5;i:33;i:6;i:34;i:7;i:35;}}', 'yes'),
+(801, '_transient_timeout_wc_admin_unsnooze_admin_notes_checked', '1574310607', 'no'),
+(802, '_transient_wc_admin_unsnooze_admin_notes_checked', 'yes', 'no'),
+(806, '_transient_wc_count_comments', 'O:8:\"stdClass\":7:{s:14:\"total_comments\";i:1;s:3:\"all\";i:1;s:8:\"approved\";s:1:\"1\";s:9:\"moderated\";i:0;s:4:\"spam\";i:0;s:5:\"trash\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
+(807, '_transient_as_comment_count', 'O:8:\"stdClass\":7:{s:8:\"approved\";s:1:\"1\";s:14:\"total_comments\";i:1;s:3:\"all\";i:1;s:9:\"moderated\";i:0;s:4:\"spam\";i:0;s:5:\"trash\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
+(827, '_transient_timeout_wc_related_94', '1574394977', 'no'),
+(828, '_transient_wc_related_94', 'a:1:{s:50:\"limit=5&exclude_ids%5B0%5D=0&exclude_ids%5B1%5D=94\";a:2:{i:0;s:2:\"77\";i:1;s:2:\"84\";}}', 'no');
 
 -- --------------------------------------------------------
 
@@ -804,7 +812,56 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (304, 84, '_wc_average_rating', '0'),
 (305, 84, '_wc_review_count', '0'),
 (306, 84, '_product_version', '3.8.0'),
-(307, 84, '_price', '1300000');
+(307, 84, '_price', '1300000'),
+(308, 89, '_wp_attached_file', '2019/11/Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail.jpg'),
+(309, 89, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:800;s:6:\"height\";i:468;s:4:\"file\";s:84:\"2019/11/Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail.jpg\";s:5:\"sizes\";a:11:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-300x176.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:176;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-768x449.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:449;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:22:\"shopical-medium-slider\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-720x450.jpg\";s:5:\"width\";i:720;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:18:\"shopical-thumbnail\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-450x410.jpg\";s:5:\"width\";i:450;s:6:\"height\";i:410;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-300x300.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-600x351.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:351;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-300x300.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-600x351.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:351;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:84:\"Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(310, 90, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1574310605;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
+(311, 91, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1574307006;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
+(312, 92, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1574310607;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
+(313, 94, '_edit_last', '1'),
+(314, 94, '_edit_lock', '1574308757:1'),
+(317, 96, '_wp_attached_file', '2019/11/a1-1.png'),
+(318, 96, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:466;s:6:\"height\";i:311;s:4:\"file\";s:16:\"2019/11/a1-1.png\";s:5:\"sizes\";a:7:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:16:\"a1-1-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}s:6:\"medium\";a:4:{s:4:\"file\";s:16:\"a1-1-300x200.png\";s:5:\"width\";i:300;s:6:\"height\";i:200;s:9:\"mime-type\";s:9:\"image/png\";}s:18:\"shopical-thumbnail\";a:4:{s:4:\"file\";s:16:\"a1-1-450x311.png\";s:5:\"width\";i:450;s:6:\"height\";i:311;s:9:\"mime-type\";s:9:\"image/png\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:16:\"a1-1-300x300.png\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:9:\"image/png\";s:9:\"uncropped\";b:0;}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:16:\"a1-1-100x100.png\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:9:\"image/png\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:16:\"a1-1-300x300.png\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:9:\"image/png\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:16:\"a1-1-100x100.png\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(319, 94, '_thumbnail_id', '96'),
+(320, 94, '_regular_price', '3850000'),
+(321, 94, 'total_sales', '0'),
+(322, 94, '_tax_status', 'taxable'),
+(323, 94, '_tax_class', ''),
+(324, 94, '_manage_stock', 'no'),
+(325, 94, '_backorders', 'no'),
+(326, 94, '_sold_individually', 'no'),
+(327, 94, '_virtual', 'no'),
+(328, 94, '_downloadable', 'no'),
+(329, 94, '_download_limit', '-1'),
+(330, 94, '_download_expiry', '-1'),
+(331, 94, '_stock', NULL),
+(332, 94, '_stock_status', 'instock'),
+(333, 94, '_wc_average_rating', '0'),
+(334, 94, '_wc_review_count', '0'),
+(335, 94, '_product_version', '3.8.0'),
+(336, 94, '_price', '3850000'),
+(337, 97, '_edit_last', '1'),
+(338, 97, '_edit_lock', '1574309104:1'),
+(339, 98, '_wp_attached_file', '2019/11/a1.png'),
+(340, 98, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:355;s:6:\"height\";i:355;s:4:\"file\";s:14:\"2019/11/a1.png\";s:5:\"sizes\";a:6:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:14:\"a1-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}s:6:\"medium\";a:4:{s:4:\"file\";s:14:\"a1-300x300.png\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:9:\"image/png\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:14:\"a1-300x300.png\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:9:\"image/png\";s:9:\"uncropped\";b:0;}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:14:\"a1-100x100.png\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:9:\"image/png\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:14:\"a1-300x300.png\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:9:\"image/png\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:14:\"a1-100x100.png\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(341, 97, '_thumbnail_id', '98'),
+(342, 97, '_regular_price', '159000'),
+(343, 97, 'total_sales', '0'),
+(344, 97, '_tax_status', 'taxable'),
+(345, 97, '_tax_class', ''),
+(346, 97, '_manage_stock', 'no'),
+(347, 97, '_backorders', 'no'),
+(348, 97, '_sold_individually', 'no'),
+(349, 97, '_virtual', 'no'),
+(350, 97, '_downloadable', 'no'),
+(351, 97, '_download_limit', '-1'),
+(352, 97, '_download_expiry', '-1'),
+(353, 97, '_stock', NULL),
+(354, 97, '_stock_status', 'instock'),
+(355, 97, '_wc_average_rating', '0'),
+(356, 97, '_wc_review_count', '0'),
+(357, 97, '_product_version', '3.8.0'),
+(358, 97, '_price', '159000');
 
 -- --------------------------------------------------------
 
@@ -907,7 +964,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (75, 1, '2019-11-21 01:33:48', '0000-00-00 00:00:00', '', 'AUTO-DRAFT', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2019-11-21 01:33:48', '0000-00-00 00:00:00', '', 0, 'http://localhost/commerce/?post_type=product&p=75', 0, 'product', '', 0),
 (76, 1, '2019-11-21 01:35:47', '2019-11-21 01:35:47', '', 'DS502', '', 'inherit', 'open', 'closed', '', 'ds502', '', '', '2019-11-21 01:35:47', '2019-11-21 01:35:47', '', 0, 'http://localhost/commerce/wp-content/uploads/2019/11/DS502.jpg', 0, 'attachment', 'image/jpeg', 0),
 (77, 1, '2019-11-21 01:38:10', '2019-11-21 01:38:10', '', 'Headset MSI-DS502', 'Gaming headset,\r\n\r\nFrequency: 20Hz-20KHz,\r\n\r\nImpedance: ≤2.2kΩ,\r\n\r\nSensitivity: 105±3dB,\r\n\r\nCable length: 2 m,\r\n\r\nOmnidirectional', 'publish', 'open', 'closed', '', 'headset-msi-ds502', '', '', '2019-11-21 01:38:12', '2019-11-21 01:38:12', '', 0, 'http://localhost/commerce/?post_type=product&#038;p=77', 0, 'product', '', 0),
-(78, 0, '2019-11-21 03:29:19', '2019-11-21 03:29:19', '[]', 'wc_admin_unsnooze_admin_notes', '', 'pending', 'open', 'closed', '', '', '', '', '2019-11-21 03:29:19', '2019-11-21 03:29:19', '', 0, 'http://localhost/commerce/?post_type=scheduled-action&p=78', 0, 'scheduled-action', '', 1),
+(78, 0, '2019-11-21 03:29:19', '2019-11-21 03:29:19', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dd604bd53f8a4.60975750-GtTD2yEKsTtVtdAuQZigUZ4bx3maCz1z', '', '', '2019-11-21 03:30:05', '2019-11-21 03:30:05', '', 0, 'http://localhost/commerce/?post_type=scheduled-action&#038;p=78', 0, 'scheduled-action', '', 3),
 (79, 1, '2019-11-21 02:29:23', '2019-11-21 02:29:23', '{\n    \"old_sidebars_widgets_data\": {\n        \"value\": {\n            \"wp_inactive_widgets\": [],\n            \"sidebar-1\": [\n                \"search-2\",\n                \"recent-posts-2\",\n                \"recent-comments-2\",\n                \"archives-2\",\n                \"categories-2\",\n                \"meta-2\"\n            ],\n            \"header-1\": [],\n            \"footer-1\": [],\n            \"footer-2\": [],\n            \"footer-3\": [],\n            \"footer-4\": []\n        },\n        \"type\": \"global_variable\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-11-21 02:29:23\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '848c9411-02a5-4c46-a933-c4d4d6a31de6', '', '', '2019-11-21 02:29:23', '2019-11-21 02:29:23', '', 0, 'http://localhost/commerce/2019/11/21/848c9411-02a5-4c46-a933-c4d4d6a31de6/', 0, 'customize_changeset', '', 0),
 (80, 1, '2019-11-21 02:30:24', '2019-11-21 02:30:24', '{\n    \"blogdescription\": {\n        \"value\": \"Toko Komputer Terlengkap\",\n        \"type\": \"option\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-11-21 02:30:24\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '8f489b58-7408-49c2-80a3-4fa0562eeb4b', '', '', '2019-11-21 02:30:24', '2019-11-21 02:30:24', '', 0, 'http://localhost/commerce/2019/11/21/8f489b58-7408-49c2-80a3-4fa0562eeb4b/', 0, 'customize_changeset', '', 0),
 (81, 1, '2019-11-21 02:31:29', '2019-11-21 02:31:29', '', '124364', '', 'inherit', 'open', 'closed', '', '124364', '', '', '2019-11-21 02:31:29', '2019-11-21 02:31:29', '', 0, 'http://localhost/commerce/wp-content/uploads/2019/11/124364.jpg', 0, 'attachment', 'image/jpeg', 0),
@@ -917,7 +974,16 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (85, 1, '2019-11-21 03:02:19', '2019-11-21 03:02:19', '', 'Immerse-gh70rgb', '', 'inherit', 'open', 'closed', '', 'immerse-gh70rgb', '', '', '2019-11-21 03:02:19', '2019-11-21 03:02:19', '', 84, 'http://localhost/commerce/wp-content/uploads/2019/11/Immerse-gh70rgb.jpg', 0, 'attachment', 'image/jpeg', 0),
 (86, 1, '2019-11-21 03:03:11', '2019-11-21 03:03:11', '', 'Immerse GH-70 RGB', '<ul>\n 	<li>Hi-Res certification guarantees the highest sound quality</li>\n 	<li>Enhanced Virtual 7.1 Surround Sound</li>\n 	<li>Amazing LED Light Effect</li>\n 	<li>Smart Audio Controller</li>\n 	<li>Choose from millions of colors with RGB Mystic Light</li>\n 	<li>Fine-tune detailed settings with Gaming Center</li>\n 	<li>Comes fully geared up with all accessories and carry pouch in the box</li>\n</ul>', 'inherit', 'closed', 'closed', '', '84-autosave-v1', '', '', '2019-11-21 03:03:11', '2019-11-21 03:03:11', '', 84, 'http://localhost/commerce/2019/11/21/84-autosave-v1/', 0, 'revision', '', 0),
 (87, 1, '2019-11-21 03:16:32', '2019-11-21 03:16:32', '<strong>GL62M-7RDX-2082/ 2635 </strong>\n\n- Intel Kaby Lake 7th Quad Core i7 7700HQ 2.8GHz up to 3.8GHz (6MB Cache)\n\n- 8GB RAM DDR4 (Max. 32GB), 1TB HDD 5400RPM (M.2 SSD Slot Available)\n\n- Intel HD Graphics 630 / nVidia GeForce GTX1050 2GB DDR5\n\n- DOS/ No OS\n\n- No DVD\n\n- 15.6\"inch FHD WVA Matte LED Display\n\n- 4 x 2W Speaker with Nahimic Sound Enhancer\n\n- Audio Boost\n\n- Steelseries Backlit Keyboard\n\n- HD Webcam\n\n- 1x Type-C USB 3.1, 2x Type-A USB 3.0, 1x Type-A USB 2.0, 1x RJ45 Gigabit LAN\n\n- 1x SD Card Reader (XC/HC), 1x HDMI v1.4, 1x Mini Display Port, 1x Mic In\n\n- 1x Headphone Out (SPDIF), Integrated WiFi 802.11ac + Bluetooth v4.2 - 2.2kg included 6 cells battery', 'MSI-GL62-6QF', '<p><br data-mce-bogus=\"1\"></p>', 'inherit', 'closed', 'closed', '', '65-autosave-v1', '', '', '2019-11-21 03:16:32', '2019-11-21 03:16:32', '', 65, 'http://localhost/commerce/2019/11/21/65-autosave-v1/', 0, 'revision', '', 0),
-(88, 1, '2019-11-21 03:16:32', '0000-00-00 00:00:00', '', 'AUTO-DRAFT', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2019-11-21 03:16:32', '0000-00-00 00:00:00', '', 0, 'http://localhost/commerce/?post_type=product&p=88', 0, 'product', '', 0);
+(88, 1, '2019-11-21 03:16:32', '0000-00-00 00:00:00', '', 'AUTO-DRAFT', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2019-11-21 03:16:32', '0000-00-00 00:00:00', '', 0, 'http://localhost/commerce/?post_type=product&p=88', 0, 'product', '', 0),
+(89, 1, '2019-11-21 03:21:32', '2019-11-21 03:21:32', '', 'Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail', '', 'inherit', 'open', 'closed', '', 'cooler-master-rgb-hard-gaming-black-gaming-mouse-pad-726951-gal-1-detail', '', '', '2019-11-21 03:21:32', '2019-11-21 03:21:32', '', 0, 'http://localhost/commerce/wp-content/uploads/2019/11/Cooler-Master-RGB-Hard-Gaming-Black-Gaming-mouse-pad-726951-Gal-1-Detail.jpg', 0, 'attachment', 'image/jpeg', 0),
+(90, 0, '2019-11-21 04:30:05', '2019-11-21 04:30:05', '[]', 'wc_admin_unsnooze_admin_notes', '', 'pending', 'open', 'closed', '', '', '', '', '2019-11-21 04:30:05', '2019-11-21 04:30:05', '', 0, 'http://localhost/commerce/?post_type=scheduled-action&p=90', 0, 'scheduled-action', '', 2),
+(91, 0, '2019-11-21 03:30:06', '2019-11-21 03:30:06', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dd604bf6bb903.02133067-iSnsdbSy8Im3C6uz8Gz9ccSMIyMVZ07j', '', '', '2019-11-21 03:30:07', '2019-11-21 03:30:07', '', 0, 'http://localhost/commerce/?post_type=scheduled-action&#038;p=91', 0, 'scheduled-action', '', 3),
+(92, 0, '2019-11-21 04:30:07', '2019-11-21 04:30:07', '[]', 'wc_admin_unsnooze_admin_notes', '', 'pending', 'open', 'closed', '', '', '', '', '2019-11-21 04:30:07', '2019-11-21 04:30:07', '', 0, 'http://localhost/commerce/?post_type=scheduled-action&p=92', 0, 'scheduled-action', '', 1),
+(93, 1, '2019-11-21 03:33:06', '0000-00-00 00:00:00', '', 'AUTO-DRAFT', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2019-11-21 03:33:06', '0000-00-00 00:00:00', '', 0, 'http://localhost/commerce/?post_type=product&p=93', 0, 'product', '', 0),
+(94, 1, '2019-11-21 03:55:38', '2019-11-21 03:55:38', 'Specification:\r\nWireless Headset:\r\nCircumaural Design with 50mm Driver Units providing crystal clear audio\r\nLeatherette Ear Cushions for maximum comfort\r\nVolume &amp; Mic Control Buttons on the Headset\r\nRetractable Boom Mic\r\nComes with headset stand &amp; base station\r\nDimensions of headset: 196mm(W) * 214mm(H) * 104.8mm(D)\r\nDimensions of headphone stand: 143mm * 243mm * 125.2mm\r\nDimensions of audio hub: 115mm * 36.5mm * 122mm\r\nApproximate Weight of headset: 408g / 0.89lbs', 'Razer Thresher Ultimate Wireless Gaming Headset', '', 'publish', 'open', 'closed', '', 'razer-thresher-ultimate-wireless-gaming-headset', '', '', '2019-11-21 03:55:41', '2019-11-21 03:55:41', '', 0, 'http://localhost/commerce/?post_type=product&#038;p=94', 0, 'product', '', 0),
+(96, 1, '2019-11-21 03:52:36', '2019-11-21 03:52:36', '', 'a1', '', 'inherit', 'open', 'closed', '', 'a1-2', '', '', '2019-11-21 03:52:36', '2019-11-21 03:52:36', '', 94, 'http://localhost/commerce/wp-content/uploads/2019/11/a1-1.png', 0, 'attachment', 'image/png', 0),
+(97, 1, '2019-11-21 04:07:22', '2019-11-21 04:07:22', 'Product Description:\r\n\r\nName: KZ ZST\r\n\r\nShell: Smooth Type: In Ear\r\n\r\nDriver: Hybrid Sensitivty: 106dB ± 3dB\r\n\r\nImpendence: 18ohm\r\n\r\nFrequency response: 20 Hz - 20000 Hz\r\n\r\nCable Length: 1.2m\r\n\r\nPlug Type: L\r\n\r\nBending Color: black/purple\r\n\r\nWhether with mic: Optional\r\n\r\nMaterial of product: Plastic\r\n\r\nWhether can replacement cable: Yes\r\n\r\nColor:Purple ,Black', 'KZ ZST Colorful Hybrid Balance Armature with Dynamic In-ear Earphone 1BA+1DD Hifi Headset', '', 'publish', 'open', 'closed', '', 'kz-zst-colorful-hybrid-balance-armature-with-dynamic-in-ear-earphone-1ba1dd-hifi-headset', '', '', '2019-11-21 04:07:24', '2019-11-21 04:07:24', '', 0, 'http://localhost/commerce/?post_type=product&#038;p=97', 0, 'product', '', 0),
+(98, 1, '2019-11-21 04:05:33', '2019-11-21 04:05:33', '', 'a1', '', 'inherit', 'open', 'closed', '', 'a1', '', '', '2019-11-21 04:05:33', '2019-11-21 04:05:33', '', 97, 'http://localhost/commerce/wp-content/uploads/2019/11/a1.png', 0, 'attachment', 'image/png', 0);
 
 -- --------------------------------------------------------
 
@@ -975,8 +1041,34 @@ INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUE
 (36, 27, 'order', '0'),
 (37, 27, 'display_type', 'subcategories'),
 (38, 27, 'thumbnail_id', '0'),
-(39, 26, 'product_count_product_cat', '2'),
-(40, 27, 'product_count_product_cat', '2');
+(39, 26, 'product_count_product_cat', '4'),
+(40, 27, 'product_count_product_cat', '2'),
+(41, 28, 'order', '0'),
+(42, 28, 'display_type', ''),
+(43, 28, 'thumbnail_id', '89'),
+(44, 29, 'order', '0'),
+(45, 29, 'display_type', 'subcategories'),
+(46, 29, 'thumbnail_id', '0'),
+(47, 30, 'order', '0'),
+(48, 30, 'display_type', 'subcategories'),
+(49, 30, 'thumbnail_id', '0'),
+(50, 31, 'order', '0'),
+(51, 31, 'display_type', 'subcategories'),
+(52, 31, 'thumbnail_id', '0'),
+(53, 32, 'order', '0'),
+(54, 32, 'display_type', 'subcategories'),
+(55, 32, 'thumbnail_id', '0'),
+(56, 33, 'order', '0'),
+(57, 33, 'display_type', 'subcategories'),
+(58, 33, 'thumbnail_id', '0'),
+(59, 34, 'order', '0'),
+(60, 34, 'display_type', 'subcategories'),
+(61, 34, 'thumbnail_id', '0'),
+(62, 35, 'order', '0'),
+(63, 35, 'display_type', 'subcategories'),
+(64, 35, 'thumbnail_id', '0'),
+(65, 33, 'product_count_product_cat', '1'),
+(66, 34, 'product_count_product_cat', '1');
 
 -- --------------------------------------------------------
 
@@ -1022,7 +1114,15 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (24, 'Asus', 'asus', 0),
 (25, 'Dell', 'dell', 0),
 (26, 'Headset', 'headset', 0),
-(27, 'MSI', 'hsmsi', 0);
+(27, 'MSI', 'hsmsi', 0),
+(28, 'Mousepad', 'mousepad', 0),
+(29, 'ROG', 'hsrog', 0),
+(30, 'Hyper X', 'hshyperx', 0),
+(31, 'SteelSeries', 'hssteelseries', 0),
+(32, 'Digital Alliance', 'hsda', 0),
+(33, 'Razer', 'hsrazer', 0),
+(34, 'KZ ZS', 'hskzzs', 0),
+(35, 'Logitech', 'hslogitech', 0);
 
 -- --------------------------------------------------------
 
@@ -1075,7 +1175,16 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (78, 17, 0),
 (84, 2, 0),
 (84, 26, 0),
-(84, 27, 0);
+(84, 27, 0),
+(90, 17, 0),
+(91, 17, 0),
+(92, 17, 0),
+(94, 2, 0),
+(94, 26, 0),
+(94, 33, 0),
+(97, 2, 0),
+(97, 26, 0),
+(97, 34, 0);
 
 -- --------------------------------------------------------
 
@@ -1098,7 +1207,7 @@ CREATE TABLE `wp_term_taxonomy` (
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 (1, 1, 'category', '', 0, 1),
-(2, 2, 'product_type', '', 0, 9),
+(2, 2, 'product_type', '', 0, 11),
 (3, 3, 'product_type', '', 0, 0),
 (4, 4, 'product_type', '', 0, 0),
 (5, 5, 'product_type', '', 0, 0),
@@ -1113,7 +1222,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (14, 14, 'product_visibility', '', 0, 0),
 (15, 15, 'product_cat', 'All type all of mouse', 0, 5),
 (16, 16, 'action-group', '', 0, 2),
-(17, 17, 'action-group', '', 0, 4),
+(17, 17, 'action-group', '', 0, 6),
 (18, 18, 'product_cat', 'Laptop', 0, 2),
 (19, 19, 'product_cat', 'All Legion Mouse Only', 15, 2),
 (20, 20, 'product_cat', 'All mouse ROG are here', 15, 2),
@@ -1122,8 +1231,16 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (23, 23, 'product_cat', 'All Asus ROG Laptop are here', 18, 0),
 (24, 24, 'product_cat', 'All kind of Asus Laptop are here', 18, 0),
 (25, 25, 'product_cat', 'All Dell Laptops are here', 18, 0),
-(26, 26, 'product_cat', 'All headset are here', 0, 2),
-(27, 27, 'product_cat', 'All Msi headset are here', 26, 2);
+(26, 26, 'product_cat', 'All headset are here', 0, 4),
+(27, 27, 'product_cat', 'All Msi headset are here', 26, 2),
+(28, 28, 'product_cat', 'All mousepad are here', 0, 0),
+(29, 29, 'product_cat', 'All headsetROG are here', 26, 0),
+(30, 30, 'product_cat', 'All Hyper X Headset are here', 26, 0),
+(31, 31, 'product_cat', 'All Steel Series Headset are here', 26, 0),
+(32, 32, 'product_cat', 'All Digital Alliance headset are here', 26, 0),
+(33, 33, 'product_cat', 'All Razer Headset are here', 26, 1),
+(34, 34, 'product_cat', 'All KZ ZS Headset are here', 26, 1),
+(35, 35, 'product_cat', 'All Logitech Headset are here', 26, 0);
 
 -- --------------------------------------------------------
 
@@ -1418,7 +1535,9 @@ INSERT INTO `wp_wc_product_meta_lookup` (`product_id`, `sku`, `virtual`, `downlo
 (62, '', 0, 0, '12500000.00', '12500000.00', 1, NULL, 'instock', 0, '0.00', 0),
 (65, '', 0, 0, '10499000.00', '10499000.00', 1, NULL, 'instock', 0, '0.00', 0),
 (77, '', 0, 0, '750000.00', '750000.00', 0, NULL, 'instock', 0, '0.00', 0),
-(84, '', 0, 0, '1300000.00', '1300000.00', 0, NULL, 'instock', 0, '0.00', 0);
+(84, '', 0, 0, '1300000.00', '1300000.00', 0, NULL, 'instock', 0, '0.00', 0),
+(94, '', 0, 0, '3850000.00', '3850000.00', 0, NULL, 'instock', 0, '0.00', 0),
+(97, '', 0, 0, '159000.00', '159000.00', 0, NULL, 'instock', 0, '0.00', 0);
 
 -- --------------------------------------------------------
 
@@ -2023,7 +2142,7 @@ ALTER TABLE `wp_commentmeta`
 -- AUTO_INCREMENT for table `wp_comments`
 --
 ALTER TABLE `wp_comments`
-  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `wp_links`
@@ -2041,43 +2160,43 @@ ALTER TABLE `wp_mailchimp_jobs`
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=781;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=829;
 
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=308;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=359;
 
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
 
 --
 -- AUTO_INCREMENT for table `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT for table `wp_terms`
 --
 ALTER TABLE `wp_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `wp_users`
@@ -2173,7 +2292,7 @@ ALTER TABLE `wp_woocommerce_payment_tokens`
 -- AUTO_INCREMENT for table `wp_woocommerce_sessions`
 --
 ALTER TABLE `wp_woocommerce_sessions`
-  MODIFY `session_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `session_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `wp_woocommerce_shipping_zones`
